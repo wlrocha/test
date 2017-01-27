@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.appfuse.model.Robot" table="app_robot">
+        <id name="id" column="id" unsaved-value="null">
+            <generator class="increment"/>
+        </id>
+        <property name="designation" column="designation"/>
+        <property name="dateOfBuild" column="date_of_build" type="java.util.Date"/>
+        <property name="qualityCheckPassed" column="quality_check_passed" type="yes_no"/>
+        <many-to-one name="owner" class="org.appfuse.model.User"
+                     column="owner_id" unique="false" not-null="false" />
+    </class>
+</hibernate-mapping>

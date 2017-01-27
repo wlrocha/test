@@ -18,6 +18,7 @@
         <property name="mappingResources">
             <list>
                 <value>org/appfuse/model/User.hbm.xml</value>
+                <value>org/appfuse/model/Robot.hbm.xml</value>
             </list>
         </property>
         <property name="hibernateProperties">

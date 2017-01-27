@@ -68,6 +68,7 @@
                 <ul class="clearfix">
                     <li><a href="${ctx}/" title="Home"><span>Home</span></a></li>
                     <li><a href="${ctx}/users.html" title="View Users"><span>Users</span></a></li>
+                    <li><a href="${ctx}/robots.html" title="View Robots"><span>Robots</span></a></li>
                 </ul>
             </div>
         </div><!-- end nav -->
